@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cyber Guardians | AI Cyber Security</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- LIVE CYBER BACKGROUND -->
+    <canvas id="cyberCanvas"></canvas>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="logo">
+            🛡️ CYBER GUARDIANS
+        </div>
+
+
+        <!-- REAL TIME STATUS -->
+        <div class="protection-status">
+
+            <span class="status-dot"></span>
+
+            REAL-TIME PROTECTION ACTIVE
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#detector">
+                Detector
+            </a>
+
+            <a href="#awareness">
+                Awareness
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- HERO SECTION -->
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <div class="hero-content">
+
+
+            <p class="tag">
+
+                AI-POWERED CYBER SECURITY
+
+            </p>
+
+
+            <h1>
+
+                Stay One Step Ahead
+
+                <br>
+
+                Of Cyber Scams
+
+            </h1>
+
+
+            <p class="hero-text">
+
+                Cyber Guardians helps detect suspicious
+                messages and links before they cause harm.
+
+            </p>
+
+
+            <button
+                onclick="scrollToDetector()"
+            >
+
+                🔍 ANALYZE NOW
+
+            </button>
+
+
+            <p class="motto">
+
+                Detect • Explain • Protect
+
+            </p>
+
+
+            <!-- HERO LIVE STATUS -->
+
+            <div class="hero-protection">
+
+                <span
+                    class="hero-status-dot"
+                ></span>
+
+                FishShield AI Real-Time Protection Enabled
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DETECTOR SECTION -->
+
+    <section
+        id="detector"
+        class="detector"
+    >
+
+
+        <h2>
+
+            🛡️ Phishing Detector
+
+        </h2>
+
+
+        <p>
+
+            Paste a suspicious message,
+            email or URL below
+
+        </p>
+
+
+        <textarea
+
+            id="userInput"
+
+            placeholder=
+            "Paste suspicious message or URL here..."
+
+        ></textarea>
+
+
+        <br>
+
+
+        <button
+            onclick="analyzeInput()"
+        >
+
+            🔍 ANALYZE NOW
+
+        </button>
+
+
+
+        <!-- RESULT -->
+
+        <div
+            id="result"
+        >
+
+
+            <h2
+                id="riskTitle"
+            ></h2>
+
+
+
+            <!-- RISK SCORE -->
+
+            <div
+                class="risk-container"
+            >
+
+
+                <h3>
+
+                    Risk Score
+
+                </h3>
+
+
+                <div
+                    class="risk-bar"
+                >
+
+                    <div
+                        id="riskFill"
+                    ></div>
+
+                </div>
+
+
+                <p
+                    id="riskScore"
+                ></p>
+
+
+            </div>
+
+
+
+            <!-- REASONS -->
+
+            <div
+                id="reasons"
+            ></div>
+
+
+
+            <!-- RECOMMENDATION -->
+
+            <div
+                id="recommendation"
+            ></div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- AWARENESS SECTION -->
+
+    <section
+        id="awareness"
+        class="awareness"
+    >
+
+
+        <h2>
+
+            Stay Cyber Aware
+
+        </h2>
+
+
+
+        <div
+            class="cards"
+        >
+
+
+            <div
+                class="card"
+            >
+
+                <h3>
+
+                    🎣 Phishing
+
+                </h3>
+
+
+                <p>
+
+                    Learn how fake messages
+                    and websites trick users.
+
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="card"
+            >
+
+                <h3>
+
+                    🔐 Password Safety
+
+                </h3>
+
+
+                <p>
+
+                    Protect your accounts
+                    with strong passwords.
+
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="card"
+            >
+
+                <h3>
+
+                    📱 UPI Scams
+
+                </h3>
+
+
+                <p>
+
+                    Stay safe from fake
+                    payment requests and fraud.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+
+        <h3>
+
+            🛡️ CYBER GUARDIANS
+
+        </h3>
+
+
+        <p>
+
+            Detect • Explain • Protect
+
+        </p>
+
+
+        <p>
+
+            FishShield AI • Ideathon 2026
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script
+        src="/static/script.js"
+    ></script>
+
+
+</body>
+
+</html>
