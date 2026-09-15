@@ -539,7 +539,16 @@ def sitemap():
 </urlset>""",
         media_type="application/xml"
     )
+# ========================================
+# LOGIN PAGE
+# ========================================
 
+@app.get("/login", response_class=HTMLResponse)
+async def login_page(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="login.html"
+    )
 # ========================================
 # HOME PAGE
 # ========================================
