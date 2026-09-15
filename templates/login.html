@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cyber Guardians</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #07152f;
+            color: white;
+        }
+
+        .login-box {
+            width: 390px;
+            padding: 35px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 35px rgba(0,0,0,0.35);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #b8c4d9;
+            margin-bottom: 28px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #506080;
+            background: rgba(255,255,255,0.08);
+            color: white;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #aab4c7;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .login-btn {
+            background: #2563eb;
+            color: white;
+        }
+
+        .google-btn {
+            background: white;
+            color: #222;
+        }
+
+        .facebook-btn {
+            background: #1877f2;
+            color: white;
+        }
+
+        .guest-btn {
+            background: transparent;
+            color: #cbd5e1;
+            border: 1px solid #506080;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 12px 0;
+            color: #8995aa;
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 15px;
+            color: #b8c4d9;
+        }
+
+        .signup a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <div class="logo">🛡️ Cyber Guardians</div>
+
+    <div class="subtitle">
+        Secure access to FishShield AI
+    </div>
+
+    <form action="/login" method="post">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+        >
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+        >
+
+        <button class="login-btn" type="submit">
+            Sign In
+        </button>
+
+    </form>
+
+    <div class="divider">OR</div>
+
+    <button class="google-btn">
+        🔵 Continue with Google
+    </button>
+
+    <button class="facebook-btn">
+        Continue with Facebook
+    </button>
+
+    <button class="guest-btn" onclick="continueAsGuest()">
+        👤 Continue as Guest
+    </button>
+
+    <div class="signup">
+        Don't have an account?
+        <a href="/signup">Create Account</a>
+    </div>
+
+</div>
+
+<script>
+function continueAsGuest() {
+    window.location.href = "/";
+}
+</script>
+
+</body>
+</html>
