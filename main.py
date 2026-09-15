@@ -513,7 +513,32 @@ def analyze_text(input_text):
         "recommendation": recommendation
 
     }
+# ========================================
+# SEO - ROBOTS & SITEMAP
+# ========================================
 
+@app.get("/robots.txt", response_class=PlainTextResponse)
+def robots_txt():
+
+    return """User-agent: *
+Allow: /
+
+Sitemap: https://cyberguardians-iav4.onrender.com/sitemap.xml
+"""
+
+
+@app.get("/sitemap.xml")
+def sitemap():
+
+    return Response(
+        content="""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://cyberguardians-iav4.onrender.com/</loc>
+    </url>
+</urlset>""",
+        media_type="application/xml"
+    )
 
 # ========================================
 # HOME PAGE
